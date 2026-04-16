@@ -1,0 +1,9 @@
+TT-001 — Sigmoid (NumPy)
+Softmax Function
+Linear Regression
+Gradient Descent
+Cross Entropy Loss
+Adam Optimizer
+Batch Normalization
+RNN forward pass
+Scaled Dot-Product Attention
