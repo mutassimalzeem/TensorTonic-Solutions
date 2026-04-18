@@ -1,0 +1,16 @@
+✅Sigmoid (NumPy)
+✅Softmax Function
+✅Cross Entropy Loss
+Linear Regression
+Gradient Descent
+Adam Optimizer
+Batch Normalization
+RNN forward pass
+Scaled Dot-Product Attention
+Tokenization
+Embeddings
+Positional Encoding
+Multi-Head Attention
+Layer Normalization
+Feed Forward
+Output Projection
