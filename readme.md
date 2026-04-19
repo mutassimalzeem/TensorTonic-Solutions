@@ -45,6 +45,7 @@ Current solved sequence in this repo:
 3. `TT-003` Softmax
 4. `TT-004` Cross Entropy
 5. `TT-005` Gradient Descent
+6. `TT-006` Adam
 
 ---
 
@@ -60,6 +61,7 @@ Tensortonic Solutions/
 |   +-- TT-003-Softmax/
 |   +-- TT-004-Cross-Entropy/
 |   +-- TT-005-Gradien-Descent/
+|   +-- TT-006-Adam/
 |
 +-- templates/
 +-- roadmap.md
@@ -76,6 +78,7 @@ Tensortonic Solutions/
 | `TT-003` | Softmax | normalization, stability, exponentials | `00-math-and-numpy-basics/TT-003-Softmax` |
 | `TT-004` | Cross Entropy | classification loss, log probabilities | `00-math-and-numpy-basics/TT-004-Cross-Entropy` |
 | `TT-005` | Gradient Descent | derivatives, updates, optimization | `00-math-and-numpy-basics/TT-005-Gradien-Descent` |
+| `TT-006` | Adam | momentum, adaptive learning rates, bias correction | `00-math-and-numpy-basics/TT-006-Adam` |
 
 ---
 
