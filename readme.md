@@ -35,7 +35,7 @@ If you are learning ML fundamentals from first principles, this repo is designed
 </p>
 
 ```text
-Math Basics -> NumPy Operations -> Activation Functions -> Loss Functions -> Optimization
+Math Basics -> NumPy Operations -> Optimization -> Sequence Models -> Transformer Foundations
 ```
 
 Current solved sequence in this repo:
@@ -46,6 +46,14 @@ Current solved sequence in this repo:
 4. `TT-004` Cross Entropy
 5. `TT-005` Gradient Descent
 6. `TT-006` Adam
+7. `TT-007` Matrix Transposition
+8. `TT-008` Dot Product
+9. `TT-009` Linear Regression Closed Form
+10. `TT-010` Batch Normalization Forward
+11. `TT-011` RNN Step Forward
+12. `TT-012` Euclidean Distance
+13. `TT-013` Tokenization
+14. `TT-014` Embedding
 
 ---
 
@@ -62,6 +70,14 @@ Tensortonic Solutions/
 |   +-- TT-004-Cross-Entropy/
 |   +-- TT-005-Gradien-Descent/
 |   +-- TT-006-Adam/
+|   +-- TT-007-Matrix_Transposition/
+|   +-- TT-008-Dot-Product/
+|   +-- TT-009-Linear-Regression-Closed-Form/
+|   +-- TT-010-Batch-Normalization/
+|   +-- TT-011-RNN-Step-Forward/
+|   +-- TT-012-Euclidean-Distance/
+|   +-- TT-013-Tokenization/
+|   +-- TT-014-Embedding/
 |
 +-- templates/
 +-- roadmap.md
@@ -79,6 +95,14 @@ Tensortonic Solutions/
 | `TT-004` | Cross Entropy | classification loss, log probabilities | `00-math-and-numpy-basics/TT-004-Cross-Entropy` |
 | `TT-005` | Gradient Descent | derivatives, updates, optimization | `00-math-and-numpy-basics/TT-005-Gradien-Descent` |
 | `TT-006` | Adam | momentum, adaptive learning rates, bias correction | `00-math-and-numpy-basics/TT-006-Adam` |
+| `TT-007` | Matrix Transposition | matrix operations, axes, NumPy | `00-math-and-numpy-basics/TT-007-Matrix_Transposition` |
+| `TT-008` | Dot Product | linear algebra, vector multiplication | `00-math-and-numpy-basics/TT-008-Dot-Product` |
+| `TT-009` | Linear Regression Closed Form | normal equation, regression, matrix inversion | `00-math-and-numpy-basics/TT-009-Linear-Regression-Closed-Form` |
+| `TT-010` | Batch Normalization Forward | normalization, feature scaling, neural nets | `00-math-and-numpy-basics/TT-010-Batch-Normalization` |
+| `TT-011` | RNN Step Forward | recurrent networks, hidden state update | `00-math-and-numpy-basics/TT-011-RNN-Step-Forward` |
+| `TT-012` | Euclidean Distance | vector distance, L2 norm | `00-math-and-numpy-basics/TT-012-Euclidean-Distance` |
+| `TT-013` | Tokenization | NLP basics, vocabulary mapping, encoding | `00-math-and-numpy-basics/TT-013-Tokenization` |
+| `TT-014` | Embedding | token vectors, PyTorch, transformer basics | `00-math-and-numpy-basics/TT-014-Embedding` |
 
 ---
 
@@ -126,12 +150,14 @@ This makes each exercise self-contained and easy to revisit later.
 ```python
 {
     "language": "Python",
-    "numerical_computing": "NumPy",
+    "numerical_computing": ["NumPy", "PyTorch"],
     "focus": [
         "Machine Learning fundamentals",
         "Mathematical intuition",
         "Optimization basics",
-        "Vectorized computation"
+        "Vectorized computation",
+        "Sequence modeling foundations",
+        "Transformer building blocks"
     ]
 }
 ```
@@ -149,6 +175,8 @@ Instead of hiding everything behind high-level libraries, these exercises push y
 - probability transformations
 - optimization steps
 - array-based reasoning
+- sequence modeling basics
+- transformer input representations
 
 That is where a lot of real intuition gets built.
 

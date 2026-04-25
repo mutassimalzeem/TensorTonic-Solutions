@@ -6,10 +6,13 @@
 ✅Adam Optimizer
 ✅Batch Normalization
 ✅RNN forward pass
-✅Scaled Dot-Product Attention
-Tokenization
-Embeddings
+✅Tokenization
+✅Embeddings
 Positional Encoding
+Scaled Dot-Product Attention
+
+
+
 Multi-Head Attention
 Layer Normalization
 Feed Forward
