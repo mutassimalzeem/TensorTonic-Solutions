@@ -11,7 +11,9 @@ A structured learning roadmap for solving TensorTonic problems and documenting t
 > - `04-neural-networks`
 > - `05-sequence-models`
 > - `06-attention-and-transformers`
-> - `07-advanced`
+> - `07-computer-vision`
+> - `08-generative-models`
+> - `09-research-paper-implementations`
 
 ---
 
@@ -31,7 +33,7 @@ Each problem should help improve one or more of these skills:
 - implementation confidence
 - technical documentation for GitHub
 
-This roadmap follows a beginner-to-advanced progression based on publicly visible TensorTonic examples and modules, including problems such as **Sigmoid (NumPy)**, **Softmax Function**, **Cross Entropy Loss**, **Linear Regression**, **Gradient Descent**, **Adam Optimizer**, **Batch Normalization**, **RNN forward pass**, and transformer-related modules such as **Tokenization**, **Embeddings**, **Positional Encoding**, **Scaled Dot-Product Attention**, **Multi-Head Attention**, **Layer Normalization**, **Feed Forward**, and **Output Projection**. citeturn0search0
+This roadmap follows a beginner-to-advanced progression based on TensorTonic-style ML implementation exercises, including problems such as **Sigmoid (NumPy)**, **Softmax Function**, **Cross Entropy Loss**, **Linear Regression**, **Gradient Descent**, **Adam Optimizer**, **Batch Normalization**, **RNN forward pass**, and transformer-related modules such as **Tokenization**, **Embeddings**, **Positional Encoding**, **Scaled Dot-Product Attention**, **Multi-Head Attention**, **Layer Normalization**, **Feed Forward**, and **Output Projection**.
 
 ---
 
@@ -47,7 +49,9 @@ Follow this order strictly for the best learning curve:
 → 04-neural-networks
 → 05-sequence-models
 → 06-attention-and-transformers
-→ 07-advanced
+→ 07-computer-vision
+→ 08-generative-models
+→ 09-research-paper-implementations
 ```
 
 Why this order works:
@@ -59,7 +63,8 @@ Why this order works:
 5. Then build neural network intuition.
 6. Then move to sequence data.
 7. Then learn attention and transformers.
-8. Finally, solve mixed and advanced implementation problems.
+8. Then move into computer vision and generative modeling.
+9. Finally, reconstruct research-paper-inspired systems.
 
 ---
 
@@ -339,42 +344,120 @@ Learn the full pipeline from text tokens to transformer outputs.
 
 This section should make the transformer architecture feel implementable instead of mysterious.
 
-TensorTonic’s public research track around **Attention Is All You Need** highlights modules such as **Tokenization**, **Embeddings**, **Positional Encoding**, **Multi-Head Attention**, **Layer Normalization**, **Feed Forward**, and **Output Projection**, which align directly with this section structure. citeturn0search0
+TensorTonic-style transformer practice commonly breaks **Attention Is All You Need** into modules such as **Tokenization**, **Embeddings**, **Positional Encoding**, **Multi-Head Attention**, **Layer Normalization**, **Feed Forward**, and **Output Projection**, which align directly with this section structure.
 
 ---
 
-# 07 — Advanced
+# 07 — Computer Vision
 
-**Folder:** `07-advanced/`
+**Folder:** `07-computer-vision/`
 
 ## Goal
 
-Solve harder problems that combine multiple ideas at once.
+Understand how neural networks process images and spatial data.
 
 ## What to learn here
 
-- integration of multiple modules
-- implementation maturity
-- debugging harder models
-- research-paper-inspired builds
-- architecture-level understanding
+- image tensors and channel formats
+- convolution and pooling
+- feature maps
+- simple CNN blocks
+- classification and detection foundations
 
 ## Problem roadmap
 
-- [ ] Full training loop tasks
-- [ ] Hard optimization/debugging problems
+- [ ] Image preprocessing
+- [ ] 2D convolution
+- [ ] Padding and stride
+- [ ] Max pooling / average pooling
+- [ ] CNN forward pass
+- [ ] Small image classifier
+- [ ] Vision model notes
+
+## Focus points
+
+- track height, width, and channel dimensions
+- understand local receptive fields
+- explain how filters detect patterns
+- connect convolution blocks to image understanding
+
+## Repo outcome
+
+This section should make image model building blocks feel concrete and inspectable.
+
+---
+
+# 08 — Generative Models
+
+**Folder:** `08-generative-models/`
+
+## Goal
+
+Learn how models generate new data rather than only making predictions.
+
+## What to learn here
+
+- autoencoders
+- latent spaces
+- sampling
+- diffusion intuition
+- GAN and VAE foundations
+
+## Problem roadmap
+
+- [ ] Autoencoder forward pass
+- [ ] VAE reparameterization trick
+- [ ] Simple generator/discriminator blocks
+- [ ] Diffusion noise schedule
+- [ ] Denoising step implementation
+- [ ] Sampling notes
+- [ ] Generative model comparison notes
+
+## Focus points
+
+- distinguish reconstruction, generation, and sampling
+- understand latent representations
+- explain training objectives in plain language
+- keep tensor shapes clear during generation
+
+## Repo outcome
+
+This section should build the bridge from discriminative models to modern generative systems.
+
+---
+
+# 09 — Research Paper Implementations
+
+**Folder:** `09-research-paper-implementations/`
+
+## Goal
+
+Rebuild important paper ideas with careful documentation and implementation discipline.
+
+## What to learn here
+
+- architecture-level reasoning
+- reading papers for implementation details
+- combining multiple modules
+- debugging larger systems
+- comparing design choices
+
+## Problem roadmap
+
+- [ ] Attention Is All You Need components
 - [ ] Transformer assembly tasks
-- [ ] Research-style implementation tasks
-- [ ] Mixed hard problems from multiple categories
-- [ ] Comparative notes between architectures
+- [ ] CNN architecture reconstructions
+- [ ] Generative model paper modules
+- [ ] Full training loop tasks
+- [ ] Comparative architecture notes
 - [ ] Personal deep-dive experiments
 
 ## Focus points
 
-- solve without depending too much on high-level libraries
+- map paper equations to code
+- separate core ideas from engineering details
+- document assumptions and simplifications
 - explain tradeoffs clearly
-- document mistakes and lessons learned
-- focus on implementation depth, not only correctness
 
 ## Repo outcome
 
@@ -403,7 +486,7 @@ These are the most important publicly visible TensorTonic topics to prioritize f
 - [ ] Feed Forward
 - [ ] Output Projection
 
-These topics are visible across TensorTonic’s public homepage and research pages. citeturn0search0
+These topics are the current priority set for this repository because they cover the core path from NumPy fundamentals to transformer building blocks.
 
 ---
 
@@ -468,7 +551,23 @@ Whenever a new TensorTonic problem is solved, place it using this rule:
 - positional encoding
 - encoder/decoder ideas
 
-## Put the problem in `07-advanced` if it is about
+## Put the problem in `07-computer-vision` if it is about
+
+- image tensors
+- convolution
+- pooling
+- CNNs
+- spatial features
+
+## Put the problem in `08-generative-models` if it is about
+
+- autoencoders
+- VAEs
+- GANs
+- diffusion
+- sampling or denoising
+
+## Put the problem in `09-research-paper-implementations` if it is about
 
 - full architecture assembly
 - paper implementation
@@ -569,7 +668,9 @@ Outcome:
 
 ## Milestone 5 — Advanced Builder Stage
 Complete:
-- `07-advanced`
+- `07-computer-vision`
+- `08-generative-models`
+- `09-research-paper-implementations`
 - personal experiments and harder reconstructions
 
 Outcome:
@@ -589,4 +690,4 @@ The main idea is:
 - focus on understanding, not just passing the problem
 - turn the repository into proof of growth
 
-As TensorTonic expands its catalog, new problems can be inserted into the same folder system without breaking the structure of the repository. TensorTonic publicly describes its platform as a collection of **200+ ML problems**, so treating this roadmap as a stable category-based solve path is safer than assuming a fixed public master list of all titles. citeturn0search0
+As TensorTonic expands its catalog, new problems can be inserted into the same folder system without breaking the structure of the repository. Treating this roadmap as a stable category-based solve path is safer than assuming a fixed public master list of all titles.

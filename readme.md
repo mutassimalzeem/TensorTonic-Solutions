@@ -54,6 +54,12 @@ Current solved sequence in this repo:
 12. `TT-012` Euclidean Distance
 13. `TT-013` Tokenization
 14. `TT-014` Embedding
+15. `TT-015` Positional Encoding
+16. `TT-016` Scaled Dot Product Attention
+17. `TT-017` Multi-Head Attention
+18. `TT-018` FeedForward Network
+19. `TT-019` Layer Normalization
+20. `TT-020` Encoder Block
 
 ---
 
@@ -65,19 +71,41 @@ Tensortonic Solutions/
 +-- 00-math-and-numpy-basics/
 |   |
 |   +-- TT-001-sigmoid-numpy/
+|   +-- TT-007-Matrix_Transposition/
+|   +-- TT-008-Dot-Product/
+|   +-- TT-012-Euclidean-Distance/
+|
++-- 01-core-ml/
+|   +-- TT-009-Linear-Regression-Closed-Form/
+|
++-- 02-optimization/
+|   +-- TT-005-Gradien-Descent/
+|   +-- TT-006-Adam/
+|
++-- 03-losses-and-activations/
 |   +-- TT-002-MSE-numpy/
 |   +-- TT-003-Softmax/
 |   +-- TT-004-Cross-Entropy/
-|   +-- TT-005-Gradien-Descent/
-|   +-- TT-006-Adam/
-|   +-- TT-007-Matrix_Transposition/
-|   +-- TT-008-Dot-Product/
-|   +-- TT-009-Linear-Regression-Closed-Form/
+|
++-- 04-neural-networks/
 |   +-- TT-010-Batch-Normalization/
+|
++-- 05-sequence-models/
 |   +-- TT-011-RNN-Step-Forward/
-|   +-- TT-012-Euclidean-Distance/
+|
++-- 06-attention-and-transformers/
 |   +-- TT-013-Tokenization/
 |   +-- TT-014-Embedding/
+|   +-- TT-015-Positional-Encoding/
+|   +-- TT-016-Scaled-Dot-Product/
+|   +-- TT-017-MultiHead-Attention/
+|   +-- TT-018-FeedForward-Network/
+|   +-- TT-019-LayerNorm/
+|   +-- TT-020-Encoder-Block/
+|
++-- 07-computer-vision/
++-- 08-generative-models/
++-- 09-research-paper-implementations/
 |
 +-- templates/
 +-- roadmap.md
@@ -90,19 +118,25 @@ Tensortonic Solutions/
 | ID | Problem | Concepts | Folder |
 |---|---|---|---|
 | `TT-001` | Sigmoid | activation function, NumPy basics | `00-math-and-numpy-basics/TT-001-sigmoid-numpy` |
-| `TT-002` | MSE | regression loss, averaging, arrays | `00-math-and-numpy-basics/TT-002-MSE-numpy` |
-| `TT-003` | Softmax | normalization, stability, exponentials | `00-math-and-numpy-basics/TT-003-Softmax` |
-| `TT-004` | Cross Entropy | classification loss, log probabilities | `00-math-and-numpy-basics/TT-004-Cross-Entropy` |
-| `TT-005` | Gradient Descent | derivatives, updates, optimization | `00-math-and-numpy-basics/TT-005-Gradien-Descent` |
-| `TT-006` | Adam | momentum, adaptive learning rates, bias correction | `00-math-and-numpy-basics/TT-006-Adam` |
+| `TT-002` | MSE | regression loss, averaging, arrays | `03-losses-and-activations/TT-002-MSE-numpy` |
+| `TT-003` | Softmax | normalization, stability, exponentials | `03-losses-and-activations/TT-003-Softmax` |
+| `TT-004` | Cross Entropy | classification loss, log probabilities | `03-losses-and-activations/TT-004-Cross-Entropy` |
+| `TT-005` | Gradient Descent | derivatives, updates, optimization | `02-optimization/TT-005-Gradien-Descent` |
+| `TT-006` | Adam | momentum, adaptive learning rates, bias correction | `02-optimization/TT-006-Adam` |
 | `TT-007` | Matrix Transposition | matrix operations, axes, NumPy | `00-math-and-numpy-basics/TT-007-Matrix_Transposition` |
 | `TT-008` | Dot Product | linear algebra, vector multiplication | `00-math-and-numpy-basics/TT-008-Dot-Product` |
-| `TT-009` | Linear Regression Closed Form | normal equation, regression, matrix inversion | `00-math-and-numpy-basics/TT-009-Linear-Regression-Closed-Form` |
-| `TT-010` | Batch Normalization Forward | normalization, feature scaling, neural nets | `00-math-and-numpy-basics/TT-010-Batch-Normalization` |
-| `TT-011` | RNN Step Forward | recurrent networks, hidden state update | `00-math-and-numpy-basics/TT-011-RNN-Step-Forward` |
+| `TT-009` | Linear Regression Closed Form | normal equation, regression, matrix inversion | `01-core-ml/TT-009-Linear-Regression-Closed-Form` |
+| `TT-010` | Batch Normalization Forward | normalization, feature scaling, neural nets | `04-neural-networks/TT-010-Batch-Normalization` |
+| `TT-011` | RNN Step Forward | recurrent networks, hidden state update | `05-sequence-models/TT-011-RNN-Step-Forward` |
 | `TT-012` | Euclidean Distance | vector distance, L2 norm | `00-math-and-numpy-basics/TT-012-Euclidean-Distance` |
-| `TT-013` | Tokenization | NLP basics, vocabulary mapping, encoding | `00-math-and-numpy-basics/TT-013-Tokenization` |
-| `TT-014` | Embedding | token vectors, PyTorch, transformer basics | `00-math-and-numpy-basics/TT-014-Embedding` |
+| `TT-013` | Tokenization | NLP basics, vocabulary mapping, encoding | `06-attention-and-transformers/TT-013-Tokenization` |
+| `TT-014` | Embedding | token vectors, PyTorch, transformer basics | `06-attention-and-transformers/TT-014-Embedding` |
+| `TT-015` | Positional Encoding | sinusoidal positions, sequence order, transformers | `06-attention-and-transformers/TT-015-Positional-Encoding` |
+| `TT-016` | Scaled Dot Product Attention | attention scores, softmax, weighted values | `06-attention-and-transformers/TT-016-Scaled-Dot-Product` |
+| `TT-017` | Multi-Head Attention | attention heads, projections, sequence mixing | `06-attention-and-transformers/TT-017-MultiHead-Attention` |
+| `TT-018` | FeedForward Network | MLP, ReLU, transformer sublayers | `06-attention-and-transformers/TT-018-FeedForward-Network` |
+| `TT-019` | LayerNorm | feature normalization, gamma, beta, stability | `06-attention-and-transformers/TT-019-LayerNorm` |
+| `TT-020` | Encoder Block | self-attention, residuals, layer norm, FFN | `06-attention-and-transformers/TT-020-Encoder-Block` |
 
 ---
 
