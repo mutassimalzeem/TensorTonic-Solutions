@@ -233,7 +233,7 @@ The intention is to keep expanding this repository in a clean progression:
 ## Quick Start
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/mutassimalzeem/TensorTonic-Solutions.git
 cd "Tensortonic Solutions"
 ```
 
