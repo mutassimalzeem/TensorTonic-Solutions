@@ -32,9 +32,3 @@ def knn_distance(X_train, X_test, k):
 
     
     return np.array(all_results, dtype=int).reshape(len(X_test), k)
-
-# Verification
-result = knn_distance(X_train=[[0,0]], X_test=[], k=2)
-print(f"Result: {result}")
-print(f"Dtype: {result.dtype}") 
-# Output: int64 or int32
