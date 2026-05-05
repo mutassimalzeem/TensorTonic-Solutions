@@ -14,6 +14,6 @@ def k_means_assignment(points, centroids):
         
         nearest = int(np.argmin(dist))
         labels.append(nearest)
-    
+
     # Returns a flat list of integers
     return labels

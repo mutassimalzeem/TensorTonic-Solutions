@@ -60,6 +60,10 @@ Current solved sequence in this repo:
 18. `TT-018` FeedForward Network
 19. `TT-019` Layer Normalization
 20. `TT-020` Encoder Block
+21. `TT-021` Logistic Regression
+22. `TT-022` KNN Distance
+23. `TT-023` K-Means Clustering
+24. `TT-024` PCA Projection
 
 ---
 
@@ -77,6 +81,10 @@ Tensortonic Solutions/
 |
 +-- 01-core-ml/
 |   +-- TT-009-Linear-Regression-Closed-Form/
+|   +-- TT-021-Logistic-Regression/
+|   +-- TT-022-KNN-Distance/
+|   +-- TT-023-K-Means-Clustering/
+|   +-- TT-024-pca-projection/
 |
 +-- 02-optimization/
 |   +-- TT-005-Gradien-Descent/
@@ -137,6 +145,10 @@ Tensortonic Solutions/
 | `TT-018` | FeedForward Network | MLP, ReLU, transformer sublayers | `06-attention-and-transformers/TT-018-FeedForward-Network` |
 | `TT-019` | LayerNorm | feature normalization, gamma, beta, stability | `06-attention-and-transformers/TT-019-LayerNorm` |
 | `TT-020` | Encoder Block | self-attention, residuals, layer norm, FFN | `06-attention-and-transformers/TT-020-Encoder-Block` |
+| `TT-021` | Logistic Regression | binary classification, sigmoid, gradient descent | `01-core-ml/TT-021-Logistic-Regression` |
+| `TT-022` | KNN Distance | nearest neighbors, Euclidean distance, indexing | `01-core-ml/TT-022-KNN-Distance` |
+| `TT-023` | K-Means Clustering | clustering, centroid assignment, squared distance | `01-core-ml/TT-023-K-Means-Clustering` |
+| `TT-024` | PCA Projection | dimensionality reduction, covariance, eigenvectors | `01-core-ml/TT-024-pca-projection` |
 
 ---
 
