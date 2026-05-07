@@ -64,6 +64,7 @@ Current solved sequence in this repo:
 22. `TT-022` KNN Distance
 23. `TT-023` K-Means Clustering
 24. `TT-024` PCA Projection
+25. `TT-025` Naive Bayes Log Likelihood (Bernoulli)
 
 ---
 
@@ -85,6 +86,7 @@ Tensortonic Solutions/
 |   +-- TT-022-KNN-Distance/
 |   +-- TT-023-K-Means-Clustering/
 |   +-- TT-024-pca-projection/
+|   +-- TT-025-Naive-Bayes-Log-Likelihood-(Bernoulli)/
 |
 +-- 02-optimization/
 |   +-- TT-005-Gradien-Descent/
@@ -149,6 +151,7 @@ Tensortonic Solutions/
 | `TT-022` | KNN Distance | nearest neighbors, Euclidean distance, indexing | `01-core-ml/TT-022-KNN-Distance` |
 | `TT-023` | K-Means Clustering | clustering, centroid assignment, squared distance | `01-core-ml/TT-023-K-Means-Clustering` |
 | `TT-024` | PCA Projection | dimensionality reduction, covariance, eigenvectors | `01-core-ml/TT-024-pca-projection` |
+| `TT-025` | Naive Bayes Log Likelihood (Bernoulli) | binary features, Laplace smoothing, log probabilities | `01-core-ml/TT-025-Naive-Bayes-Log-Likelihood-(Bernoulli)` |
 
 ---
 
